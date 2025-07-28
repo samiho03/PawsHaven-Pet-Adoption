@@ -1,0 +1,351 @@
+
+  
+  /* Main container styling */
+  #pet-details-container {
+    max-width: 1200px;
+    margin-left: 20px;
+    padding: 20px;
+    /* background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); */
+  }
+  
+  /* Title styling */
+  .pet-list-title {
+    color: #0d0c0e;
+    font-size: 2rem;
+    margin-bottom: 10px;
+    margin-top: -10px;
+  }
+  
+  
+  /* Table styling */
+  .pet-list-table {
+    width: 102%;
+    border-collapse: separate;
+    border-spacing: 0; /* Ensure border-radius doesn't collapse */
+    margin-bottom: 20px;
+    margin-top: 40px;
+    border: 1px solid #d6c4db;
+    border-radius: 10px;
+    overflow: hidden; /* Ensure the rounded corners are applied */
+  }
+  
+  /* Table header */
+  .pet-list-header th {
+    background-color: #171615;
+    color: white;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  /* Set the width of specific columns */
+  .pet-list-details-col {
+    width: 15%; /* Increase width of Pet Details column */
+  }
+  
+  
+  
+  /* Table cell styling */
+  .pet-list-body td {
+    padding: 10px;
+   
+    border-bottom: 1px solid #d6c4db;
+    border-left: 1px solid #d6c4db; /* Add left border to create column distinction */
+  }
+  
+  .pet-list-body td:first-child {
+    border-left: none; /* Remove left border from the first column */
+  }
+  
+  .pet-list-body td:last-child {
+    border-right: none; /* Remove right border from the last column */
+    
+  }
+  .pet-list-row:nth-child(even) {
+    background-color: #ffffff9c;
+  }
+  
+ 
+  
+  
+  /* Content Styling */
+  .pet-name, .pet-details, .pet-reason-temp, .pet-justify, .owner-details, .pet-reg-status {
+    color: #1a242f;
+  }
+  
+  .pet-details {
+    font-size: 0.8rem;
+    line-height: 1.5;
+    text-align: left;
+  }
+  .pet-justify{
+    font-size: 0.8rem;
+  }
+  .pet-reason-temp {
+    font-size: 0.8rem;
+    text-align: left;
+  }
+  
+  .owner-details {
+    font-size: 0.8rem;
+    line-height: 1.6;
+    text-align: left;
+  }
+  
+  /* Category label bold styling */
+  .category-label {
+    font-weight: bold;
+    color: #1a242f;
+    text-align: left;
+  }
+  
+  
+  /* Button Styling */
+  .approve-button, .reject-button {
+    padding: 12px; 
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.372);
+  }
+  
+ 
+  
+  .pet-image-cell {
+    width: 100px;
+    text-align: center;
+    vertical-align: middle;
+    padding: 5px;
+  }
+  
+  .pet-image-link {
+    display: block;
+    text-decoration: none;
+  }
+  
+  .pet-image-container {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+    box-shadow: 0 4px 10px #9595957c;
+    transition: transform 0.3s ease;
+  }
+  
+  .pet-image-container:hover {
+    transform: scale(1.05);
+  }
+  
+  .pet-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .decision-cell {
+    vertical-align: middle;
+    padding: 10px;
+  }
+  
+  .decision-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .button-row {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .approve-button, .reject-button {
+    padding: 11px 12px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: all 0.2s ease;
+  }
+  
+  .approve-button {
+    background-color: #916ed6;
+    color: white;
+  }
+  
+  .approve-button:hover:not(:disabled) {
+    background-color: #7f62b4;
+  }
+  
+  .reject-button {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  .reject-button:hover:not(:disabled) {
+    background-color: #d32f2f;
+  }
+  
+  .approve-button:disabled, .reject-button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+  
+  .status-badge {
+    display: inline-block;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: capitalize;
+  }
+  
+  /* Search Container */
+.search-container {
+  display: flex;
+  margin-bottom: 20px;
+  max-width: 400px;
+}
+
+.search-input {
+  flex: 1;
+  padding: 10px;
+  margin-right: 5px;
+  
+  box-shadow: 0 2px 4px rgba(178, 136, 214, 0.63);
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.search-button {
+  padding: 10px 15px;
+  background: linear-gradient(135deg, #916ed6 0%, #ab80d1 100%);
+  box-shadow: 0 2px 4px rgba(19, 18, 20, 0.4);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.search-button:hover {
+  background-color: #916ed6;
+}
+
+.search-button i {
+  margin-right: 5px;
+}
+
+/* Pagination */
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 5px;
+}
+
+.pagination-button {
+  padding: 8px 12px;
+  border: 1px solid #c9adcb;
+  background-color: white;
+  color: #333;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: all 0.3s;
+}
+
+.pagination-button:hover:not(:disabled) {
+  background-color: #fbebff;
+}
+
+.pagination-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.pagination-button.active {
+  background: linear-gradient(135deg, #916ed6 0%, #ab80d1 100%);
+  color: white;
+  border-color: #916ed6;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .pet-list-table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}
+  
+
+/* Filter Container */
+.filter-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 20px;
+}
+
+.status-filter-container {
+  display: flex;
+  gap: 10px;
+}
+
+.filter-button {
+  padding: 10px 15px;
+  background: white;
+  border: 1px solid #d6c4db;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.3s;
+  box-shadow: 0 2px 4px rgba(178, 136, 214, 0.2);
+}
+
+.filter-button:hover {
+  background-color: #f5f0fa;
+}
+
+.filter-button.active {
+  background: linear-gradient(135deg, #916ed6 0%, #ab80d1 100%);
+  color: white;
+  border-color: #916ed6;
+}
+
+/* Adjust search container to take available space */
+.search-container {
+  flex: 1;
+  max-width: 400px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .filter-container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .search-container {
+    max-width: 100%;
+  }
+  
+  .status-filter-container {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}

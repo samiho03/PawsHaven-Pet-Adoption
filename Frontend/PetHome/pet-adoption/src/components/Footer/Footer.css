@@ -1,0 +1,130 @@
+/* components/Footer/Footer.css */
+.footer {
+    background-color: rgb(15, 2, 18);
+    color: white;
+    padding: 3rem 5% 0;
+  }
+  
+  .footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-section {
+    margin-bottom: 2rem;
+  }
+  
+  .footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .footer-logo .paw-icon {
+    font-size: 1.5rem;
+    color: plum;
+  }
+  
+  .footer-section h4 {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+    padding-bottom: 0.5rem;
+  }
+  
+  .footer-section h4::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background-color: rgb(244, 185, 249);
+  }
+  
+  .footer-section ul {
+    margin-left: -40px;
+    list-style: none;
+  }
+  
+  .footer-section ul li {
+    margin-bottom: 0.8rem;
+  }
+  
+  .footer-section ul li a {
+    color: #ddd;
+    text-decoration: none;
+    transition: color 0.3s ease, padding-left 0.3s ease;
+  }
+  
+  .footer-section ul li a:hover {
+    color: plum;
+    padding-left: 5px;
+  }
+  
+  .contact-info li {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+  }
+  
+  .social-icons a {
+    color: white;
+    font-size: 1.2rem;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  .social-icons a:hover {
+    color: plum;
+    transform: translateY(-3px);
+  }
+  
+  .newsletter-form {
+    display: flex;
+    margin-top: 1rem;
+  }
+  
+  .newsletter-form input {
+    flex: 1;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 4px 0 0 4px;
+  }
+  
+  .newsletter-form button {
+    background-color: rgb(143, 42, 177);
+    color: white;
+    border: none;
+    padding: 0 1rem;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .newsletter-form button:hover {
+    background-color: #7e0896;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    padding: 1.5rem 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    margin-top: 2rem;
+  }
+  
+  @media (max-width: 768px) {
+    .footer-container {
+      grid-template-columns: 1fr;
+    }
+  }

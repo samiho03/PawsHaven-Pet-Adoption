@@ -1,0 +1,258 @@
+/* .user-form {
+    max-width:auto;
+     margin: auto; 
+     margin-top: 50px; 
+    background-color: rgb(228, 227, 224);
+    padding: 30px;
+    border-radius: 20px;
+   
+  }
+  
+  .form-title {
+    font-size: 30px;
+    padding-bottom: 30px;
+    padding-top: 20px;
+  }
+  
+  .photo-upload {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .photo-upload label {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #000000;
+  }
+  
+  form label {
+    display: block;
+    font-weight: 600;
+    text-align: left;
+    margin-bottom: 5px;
+  }
+  
+  .user-form .textCombo::placeholder {
+    color: #5a5a5a;
+    font-weight: lighter;
+  }
+  
+  .user-form .controlCont::placeholder {
+    color: #ec9191;
+    font-weight: lighter;
+  }
+  
+  .user-form .controlCont {
+    background-color: rgb(228, 227, 224);
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+    border-radius: 20px;
+    padding: 10px;
+    border: 1px solid #f0f0f0;
+  }
+  
+  .user-form .textCombo {
+    background-color: rgb(255, 255, 255);
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+    border-radius: 20px;
+    padding: 10px;
+    border: 1px solid #f0f0f0;
+  }
+  
+  .form-check {
+    text-align: left;
+  }
+  
+  .user-form .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .user-form .save-continue-btn {
+    margin-top: 20px;
+  }
+  
+  .user-form .save-continue-btn {
+    background-color: #93775d;
+    border: none;
+    font-size: 18px;
+    padding: 12px;
+    border-radius: 30px;
+    color: #ffffff;
+    font-weight: bold;
+  }
+  
+  .user-form .save-continue-btn:hover {
+    background-color: #75604c;
+  }
+  
+  .photo-icon-wrapper {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .photo-icon {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #93775d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .photo-icon i {
+    font-size: 40px;
+    color: #ffffff;
+  }
+  
+  .uploaded-photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .photo-input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  .contact-section {
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    padding: 15px;
+  }
+  
+  .custom-radio input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    top: 10%;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #3f3f3f;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .custom-radio input[type="radio"]:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 12px;
+    height: 12px;
+    background-color: transparent;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .custom-radio input[type="radio"]:checked {
+    border-color: #93775d;
+  }
+  
+  .custom-radio input[type="radio"]:checked:before {
+    background-color: #93775d;
+  }
+  
+  .custom-radio label {
+    margin-right: 30px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .search-container input {
+    width: calc(100% - 90px);
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .search-container button {
+    display: inline-block;
+    padding: 10px 20px;
+  }
+   */
+
+   /* .user-form .cal-continue-btn {
+    margin-top: -10px;
+  }
+
+   .user-form .cal-continue-btn {
+   
+    background-color: #1f1d1c;
+    border: none;
+    font-size: 18px;
+    margin-bottom: 15px;
+    border-radius: 15px;
+   padding: 10px;
+    color: #ffffff;
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  .user-form .cal-continue-btn:hover
+  {
+    background-color: #3c3b3a;
+    color: #ffc107;
+  } 
+
+  .custom-radio input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    top: 10%;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #3f3f3f;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .custom-radio input[type="radio"]:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 12px;
+    height: 12px;
+    background-color: transparent;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .custom-radio input[type="radio"]:checked {
+    border-color: #2d2722;
+  }
+  
+  .custom-radio input[type="radio"]:checked:before {
+    background-color: #413529;
+  }
+  
+  .custom-radio label {
+    margin-right: 30px;
+  }
+   */

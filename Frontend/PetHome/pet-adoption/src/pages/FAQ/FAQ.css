@@ -1,0 +1,12 @@
+/* src/pages/FAQ/FAQ.css */
+.faq-page {
+    padding: 2rem 5%;
+    min-height: calc(100vh - 80px);
+    background-color: var(--light-color);
+  }
+  
+  .faq-page h1 {
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+    text-align: center;
+  }

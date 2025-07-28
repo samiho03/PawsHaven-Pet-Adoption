@@ -1,0 +1,5 @@
+/* pages/Home/Home.css */
+.home-page {
+    padding-top: 80px; /* To account for fixed navbar */
+    min-height: calc(100vh - 80px);
+  }

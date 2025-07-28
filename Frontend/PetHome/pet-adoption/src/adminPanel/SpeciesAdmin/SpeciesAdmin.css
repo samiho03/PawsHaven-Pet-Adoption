@@ -1,0 +1,313 @@
+/* Main container styling */
+.species-admin-main-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  margin-left: 20px;
+
+}
+
+/* Title styling */
+.species-admin-title {
+  color: #0d0c0e;
+  font-size: 2.1rem;
+  margin-bottom: 30px;
+    margin-top: -5px;
+}
+
+.species-admin-subtitle {
+  color: #0d0c0e;
+  font-size: 1.5rem;
+  margin-bottom: 25px;
+}
+
+/* Error message styling */
+.species-admin-error {
+  color: #e74c3c;
+  background-color: #fadbd8;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  border-left: 4px solid #e74c3c;
+}
+
+/* Form wrapper styling */
+.species-admin-form-wrapper {
+  background-color: white;
+  padding: 25px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border: 1px solid #d6c4db;
+}
+
+.species-admin-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Form row styling */
+.species-form-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+/* Photo upload styling */
+.species-photo-upload-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.species-photo-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.species-photo-icon {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #916ed6 0%, #ab80d1 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  cursor: pointer;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(178, 136, 214, 0.3);
+  transition: all 0.3s ease;
+}
+
+.species-photo-icon:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(178, 136, 214, 0.4);
+}
+
+.species-camera-icon {
+  font-size: 30px;
+}
+
+.species-uploaded-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.species-photo-input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.species-upload-label {
+  font-size: 0.8rem;
+  color: #1a242f;
+  font-weight: 500;
+}
+
+/* Input container styling */
+.species-name-input-container {
+  flex: 1;
+  margin-top: 10px;
+}
+
+.species-admin-label {
+  
+  color: #1a242f;
+  margin-right: 10px;
+  margin-left: 40px;
+}
+
+.species-admin-input {
+  padding: 12px;
+  border: 1px solid #d6c4db;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.3s;
+  box-shadow: 0 2px 4px rgba(178, 136, 214, 0.2);
+  width: 50%;
+}
+
+.species-admin-input:focus {
+  border-color: #916ed6;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(145, 110, 214, 0.2);
+}
+
+/* Button styling */
+.species-admin-submit-btn {
+  background: linear-gradient(135deg, #916ed6 0%, #ab80d1 100%);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: all 0.3s;
+  box-shadow: 0 2px 4px rgba(19, 18, 20, 0.2);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 19%;
+  margin-bottom: 20px;
+}
+
+.species-admin-submit-btn:hover:not(:disabled) {
+  background: linear-gradient(135deg, #7f62b4 0%, #9a70c4 100%);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(19, 18, 20, 0.3);
+}
+
+.species-admin-submit-btn:disabled {
+  background: #bdc3c7;
+  cursor: not-allowed;
+}
+
+/* Species list styling */
+.species-admin-list-wrapper {
+ 
+  padding: 0px;
+  border-radius: 10px;
+
+}
+
+.species-admin-empty-message {
+  color: #7f8c8d;
+  font-style: italic;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Grid and card styling */
+.species-admin-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 25px;
+  margin-top: 20px;
+}
+
+.species-admin-card {
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(178, 136, 214, 0.2);
+  transition: all 0.3s ease;
+  border: 1px solid #d6c4db;
+}
+
+.species-admin-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(178, 136, 214, 0.3);
+}
+
+.species-admin-card-image {
+  height: 200px;
+  background-color: #f5f0fa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.species-admin-card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.species-admin-card:hover .species-admin-card-img {
+  transform: scale(1.05);
+}
+
+.species-admin-no-image {
+  color: #916ed6;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.species-admin-card-details {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.species-admin-card-title {
+  margin: 0;
+  color: #1a242f;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+/* Delete button styling */
+.species-admin-delete-btn {
+  background: linear-gradient(135deg, #e74c3c 0%, #f44336 100%);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: all 0.3s;
+  box-shadow: 0 2px 4px rgba(19, 18, 20, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+}
+
+.species-admin-delete-btn:hover {
+  background: linear-gradient(135deg, #c0392b 0%, #d32f2f 100%);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(19, 18, 20, 0.3);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .species-admin-main-container {
+    padding: 15px;
+  }
+  
+  .species-form-row {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .species-admin-grid {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 15px;
+  }
+  
+  .species-admin-form-wrapper,
+  .species-admin-list-wrapper {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .species-admin-title {
+    font-size: 1.8rem;
+  }
+  
+  .species-admin-subtitle {
+    font-size: 1.3rem;
+  }
+  
+  .species-admin-grid {
+    grid-template-columns: 1fr;
+  }
+}

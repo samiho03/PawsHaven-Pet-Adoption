@@ -1,0 +1,148 @@
+/* Map.css */
+.map-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(to bottom, #ffffff,  #e6d0fd,#efe4fb, #fbfaf5 );
+    margin-top: 90px;
+    padding: 10px 90px 150px 90px;
+  }
+  
+  .map-title {
+    font-size: 2.6rem;
+    font-weight: 800;
+    color: #060709;
+    margin-bottom: 0.5rem;
+    line-height: 1.4;
+    letter-spacing: 0.5px;
+    font-family: "DynaPuff", cursive;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  }
+
+  
+  .map-subtitle {
+    text-align: center;
+    color: #666;
+    font-size: 1.1rem;
+    margin-top: -5px;
+    margin-bottom: 50px;
+    font-weight: 500;
+  }
+  .map-search-form {
+    background-color: #f5f5f55c;
+    padding: 20px;
+    border-radius: 35px;
+    margin-bottom: 30px;
+    width: 100%;
+    max-width: 650px;
+  }
+  
+  .map-search-input {
+    border-radius: 25px;
+    padding: 12px 15px;
+    font-size: 1rem;
+    width: 73%;
+    border: none;
+    background-color: #ffffff;
+    box-shadow: 0px 2px 3px rgba(121, 83, 154, 0.329);
+    transition: all 0.3s ease;
+  }
+  
+  .map-search-input:focus {
+    outline: none;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2), 0 0 0 2px #8b5cf6;
+  }
+  
+  .map-search-button {
+    background-color: #923fd2 ;
+    border: none;
+    color: white;
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-weight: 550;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 0px 2px 3px rgba(121, 83, 154, 0.329);
+    transition: all 0.3s ease;
+    margin-left: 10px;
+  }
+  
+  .map-search-button:hover {
+    background-color:  #7935ad ;
+  }
+  
+  .map-wrapper {
+    width: 100%;
+    height: 70vh;
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .leaflet-popup-content {
+    font-family: Arial, sans-serif;
+  }
+  
+  .leaflet-popup-content strong {
+    color: #8b5cf6;
+  }
+
+.map-popup-content {
+    font-family: Arial, sans-serif;
+    font-size: 0.9rem;
+    color: #333;
+  }
+  
+  .map-popup-content strong {
+    color: #8b5cf6;
+    font-size: 1rem;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .map-popup-type {
+    color: #666;
+    font-style: italic;
+    margin-bottom: 8px;
+  }
+  
+  .map-popup-phone,
+  .map-popup-website,
+  .map-popup-hours {
+    margin: 3px 0;
+  }
+  
+  .map-popup-website a {
+    color: #8b5cf6;
+    text-decoration: none;
+  }
+  
+  .map-popup-website a:hover {
+    text-decoration: underline;
+  }
+
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .map-container {
+      padding: 15px;
+    }
+    
+    .map-title {
+      font-size: 1.5rem;
+    }
+    
+    .map-search-form {
+      padding: 15px;
+    }
+    
+    .map-search-input {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+    
+    .map-search-button {
+      width: 100%;
+      margin-left: 0;
+    }
+  }

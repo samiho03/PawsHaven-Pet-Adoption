@@ -1,0 +1,256 @@
+/* Favorites.css */
+.favorites-container {
+    max-width: 1400px;
+    margin:  90px auto;
+    padding: 0 60px;
+}
+
+.favorites-container h1 {
+    text-align: center;
+    
+    color: #2c3e50;
+}
+
+.plp-subtitle3 {
+    color: #5a4a68;
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0px auto;
+    font-weight: 500;
+    position: relative;
+    display: inline-block;
+    padding: 0 1rem;
+}
+
+.plp-subtitle3::before,
+.plp-subtitle3::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 30px;
+    height: 2px;
+    background: linear-gradient(90deg, rgba(139, 92, 246, 0.3), rgba(139, 92, 246, 0));
+}
+
+.plp-subtitle3::before {
+    left: -20px;
+    transform: translateY(-50%);
+}
+
+.plp-subtitle3::after {
+    right: -20px;
+    transform: translateY(-50%) rotate(180deg);
+}
+
+
+.favorites-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.favorite-card {
+    max-width: 320px;
+    margin: 10px auto;
+    background: white;
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.favorite-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.favorite-card a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* This wrapper is crucial for positioning the favorite button */
+.favorite-image-wrapper {
+    position: relative;
+}
+
+.favorite-image {
+    height: 200px;
+    overflow: hidden;
+    border-radius: 32px;
+    margin: 20px 20px 0px 20px; 
+    background: #ffffff; 
+    box-shadow: inset 0 0 20px rgba(0,0,0,0.5);
+    position: relative; /* Added this */
+}
+
+/* Favorite button container - always visible */
+.favorite-button-container {
+    position: absolute;
+    top: 30px; /* Adjusted from 10px to account for card margin */
+    right: 30px; /* Adjusted from 10px to account for card margin */
+    z-index: 10;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease;
+    opacity: 1;
+    visibility: visible; /* Explicitly make it visible */
+}
+
+.favorite-button-container:hover {
+    transform: scale(1.1);
+    background: rgba(255, 255, 255, 1);
+}
+
+/* Add slight vignette effect */
+.favorite-image::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(
+        ellipse at center,
+        rgba(211, 93, 237, 0) 60%,
+        rgba(0,0,0,0.1) 100%
+    );
+    z-index: 1;
+    pointer-events: none;
+}
+
+.favorite-image img {
+    width: 210px;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    border-radius: 30px;
+    position: relative;
+    z-index: 0;
+    filter: contrast(1.1) saturate(1.1) brightness(0.9);
+}
+
+.favorite-info {
+    padding: 1rem 1.5rem;
+    text-align: left;
+    background: white;
+    border-radius: 0 0 20px 20px;
+}
+
+/* ... rest of your existing CSS ... */
+.favorite-info h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #333;
+    font-weight: 700;
+}
+
+.favorite-info p {
+    margin: 0.3rem 0;
+    font-size: 0.8rem;
+    color: #555;
+    display: flex;
+    text-align: center;
+}
+
+.favorite-pet-breed{
+    letter-spacing: 2.3px;
+}
+
+.favorite-info svg {
+    margin-right: 0.5rem;
+    color: #000000;
+    font-size: 0.8rem;
+}
+
+.no-favorites {
+    text-align: center;
+    padding: 2rem;
+    background: #f8f9fa;
+    border-radius: 8px;
+}
+
+.no-favorites p {
+    margin-bottom: 1rem;
+    color: #6c757d;
+}
+
+
+.favorite-browse-link {
+    display: inline-block;
+    padding: 0.5rem 1.3rem;
+    background: linear-gradient(135deg, #b889e0 0%, #7453b5 100%);
+    color: white;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.favorite-browse-link:hover {
+     background-color: #8243f0;
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(139, 92, 246, 0.4);
+
+}
+
+.loading {
+    text-align: center;
+    padding: 2rem;
+}
+
+.error {
+    text-align: center;
+    padding: 2rem;
+    color: #e74c3c;
+}
+
+.error a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+/* FavoriteButton.css */
+.favorite-button-container {
+    position: absolute;
+    top: -8px;
+    right: 10px;
+    z-index: 10;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease;
+    opacity: 1; /* Ensure it's always visible */
+}
+.favorite-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    transition: transform 0.2s;
+}
+
+.favorite-button:hover {
+    transform: scale(1.1);
+}
+
+.favorite-button.active .favorite-icon {
+    color: #e74c3c;
+}
+
+.favorite-icon {
+    color: #95a5a6;
+    transition: color 0.2s;
+}

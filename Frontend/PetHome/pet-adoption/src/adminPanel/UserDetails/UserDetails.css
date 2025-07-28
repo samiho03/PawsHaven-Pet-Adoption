@@ -1,0 +1,136 @@
+/* Main container styling */
+#user-details-container {
+  max-width: 1200px;
+  margin-left: 20px;
+  padding: 20px;
+}
+
+/* Title styling */
+.user-list-title {
+  color: #0d0c0e;
+  font-size: 2rem;
+  margin-bottom: 10px;
+  margin-top: -10px;
+}
+
+/* Table styling */
+.user-list-table {
+  width: 102%;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin-bottom: 20px;
+  margin-top: 40px;
+  border: 1px solid #d6c4db;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Table header */
+.user-list-header th {
+  background-color: #171615;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Table cell styling */
+.user-list-body td {
+  padding: 10px;
+  border-bottom: 1px solid #d6c4db;
+  border-left: 1px solid #d6c4db;
+  color: #1a242f;
+}
+
+.user-list-body td:first-child {
+  border-left: none;
+}
+
+.user-list-body td:last-child {
+  border-right: none;
+}
+
+.user-list-row:nth-child(even) {
+  background-color: #ffffff9c;
+}
+
+/* Search Container */
+.search-container {
+  display: flex;
+  margin-bottom: 20px;
+  max-width: 400px;
+}
+
+
+
+.search-button {
+  padding: 10px 15px;
+  background: linear-gradient(135deg, #916ed6 0%, #ab80d1 100%);
+  box-shadow: 0 2px 4px rgba(19, 18, 20, 0.4);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.search-button:hover {
+  background-color: #916ed6;
+}
+
+.search-button i {
+  margin-right: 5px;
+}
+
+/* Pagination */
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 5px;
+}
+
+.pagination-button {
+  padding: 8px 12px;
+  border: 1px solid #c9adcb;
+  background-color: white;
+  color: #333;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: all 0.3s;
+}
+
+.pagination-button:hover:not(:disabled) {
+  background-color: #fbebff;
+}
+
+.pagination-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.pagination-button.active {
+  background: linear-gradient(135deg, #916ed6 0%, #ab80d1 100%);
+  color: white;
+  border-color: #916ed6;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .user-list-table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}
+
+.loading-message, .error-message, .no-users-message {
+  text-align: center;
+  padding: 20px;
+  font-size: 1.2rem;
+  color: #1a242f;
+}
+
+.error-message {
+  color: red;
+}
