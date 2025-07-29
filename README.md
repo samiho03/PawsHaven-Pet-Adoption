@@ -6,29 +6,29 @@ Welcome to **PawsHaven**, a full‑stack pet adoption platform connecting adopte
 
 ## 🌟 Key Features
 
-### 🗂️ Pet Listings & Profiles
+###  Pet Listings & Profiles
 - Registered users and shelters can **submit pets** for adoption via a form.
 - Each pet profile includes **photos**, breed, age, description, medical info, and more.
 - Once submitted, users can **track** the adoption **admin decision** through their profile.
 
-### 🧠 Predictive Adoption Time
+###  Predictive Adoption Time
 - After a pet submission, the system **predicts** how long it will take for that pet to be adopted based on data‑driven analysis.
 
-### ❤️ Favorites & User Profiles
+### Favorites & User Profiles
 - Users can **favorite** pets and revisit them via:
   - `My Favorites`
   - `My Submitted Pets`
 - Accessible from the **User Profile** dashboard after login.
 
-### 💬 Chatbot & Messaging
+### Chatbot & Messaging
 - Built‑in **chatbot assistant** helps users navigate the site and get answers.
 - Additionally, registered users can **chat directly with pet owners** to ask questions before adopting.
 
-### 🧪 Pet Match Quiz
+###  Pet Match Quiz
 - A **pet‑match quiz** helps users find the ideal pet based on their lifestyle and preferences.
 - Quiz results recommend the best‑fit pets from the listings.
 
-### 🗺️ Nearby Vet Hospitals Map
+###  Nearby Vet Hospitals Map
 - Interactive **map integration** shows **nearby veterinary hospitals** with essential details (address, contact, hours).
 - Users can access this map from the site menu.
 
@@ -40,7 +40,7 @@ Welcome to **PawsHaven**, a full‑stack pet adoption platform connecting adopte
 
 - Controllers manage endpoints for pets, quiz, chat, favorites, user profile, adoption tracking, vet data.
 - Services handle quiz scoring, prediction engine, messaging logic.
-- Repositories interact with the database (e.g. MySQL, PostgreSQL).
+- Repositories interact with the database (e.g. MySQL).
 - Entities include **User**, **Pet**, **Favorite**, **ChatMessage**, **VetHospital**, **AdoptionApplication**.
 
 ### Frontend (React.js)
@@ -70,10 +70,10 @@ Welcome to **PawsHaven**, a full‑stack pet adoption platform connecting adopte
 
 The **Admin Panel** of PawsHaven provides privileged access for administrators to manage the overall platform effectively. It allows them to oversee pet submissions, user interactions, and maintain the quality and integrity of the platform.
 
-### 🔐 Access
+###  Access
 The admin panel is protected and accessible only to authorized admin users.
 
-### 🧭 Features Overview
+###  Features Overview
 
 #### 1. **Dashboard Overview**
 - Displays real-time statistics such as:
@@ -104,11 +104,11 @@ The admin panel is protected and accessible only to authorized admin users.
 
 ## 🧪 Technologies Used
 
-- **Backend**: Java, Spring Boot, Spring Data JPA, Predictive ML module (if any)
-- **Frontend**: React.js, context API/hooks, Map integration (e.g. Google Maps / Leaflet)
-- **Database**: MySQL / PostgreSQL (via Spring Data)
+- **Backend**: Java, Spring Boot, Spring Data JPA, Predictive ML module
+- **Frontend**: React.js, context API/hooks, Map integration 
+- **Database**: MySQL (via Spring Data)
 - **Authentication**: JWT , session-based with roles
-- **Chat**: WebSocket or REST polling for real-time messaging
+- **Chat**: WebSocket 
 
 ---
 
@@ -116,8 +116,8 @@ The admin panel is protected and accessible only to authorized admin users.
 
 - The **chatbot** can be configured to answer FAQs, help with search, quiz suggestions, or adoption guidance.
 - The **prediction logic** uses previous adoption durations and pet metadata (breed, age, health) to estimate how quickly a new submission might get adopted.
-- Admins and pet-owners are notified (via UI or email) when chat messages arrive, decisions are made, or predictions update.
-- Vet hospital data is seeded or fetched via an external API and stored for fast lookup.
+- Admins and pet-owners are notified (via email) when chat messages arrive, decisions are made, or predictions update.
+
 
 ---
 
