@@ -1,7 +1,7 @@
 # 🐾 PawsHaven – Pet Adoption Platform
 
 Welcome to **PawsHaven**, a full‑stack pet adoption platform connecting adopters with pets, shelters, and pet‑owners, built with Java Spring Boot backend and React frontend.
-
+(UI screenshots are included at the end of the README.md file)
 ---
 
 ## 🌟 Key Features
