@@ -125,3 +125,15 @@ The admin panel is protected and accessible only to authorized admin users.
 
 *Enjoy exploring and supporting PawsHaven!* 🐶🐱
 
+---
+
+## 📸 User Interface (UI) Previews
+
+Explore key parts of the application through visuals below.
+
+### Home Page
+![Home Page](https://github.com/samiho03/PawsHaven-Pet-Adoption/blob/main/images/HomePage-Paws.png)
+
+### Pet Profile
+
+![Pet-Profile](https://github.com/samiho03/PawsHaven-Pet-Adoption/blob/main/images/pet-detail.png)
