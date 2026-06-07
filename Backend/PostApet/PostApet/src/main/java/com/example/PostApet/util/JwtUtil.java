@@ -17,7 +17,7 @@ import java.util.function.Function;
 @Component
 public class JwtUtil {
 
-    private static final String SECRET_KEY = "6Le9Er9RdoFQOqF8Fs9eOQZ7rEHP4crg2gVpXJxb2XY=";
+    private static final String SECRET_KEY = "secret_key";
 
 
     private String generateToken(Map<String, Object> extraClaims, UserDetails details) {
